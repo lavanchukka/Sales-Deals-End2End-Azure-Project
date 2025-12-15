@@ -25,7 +25,7 @@
 		},
 		"FileServer1_properties_typeProperties_host": {
 			"type": "string",
-			"defaultValue": "C:\\Users\\LAVAN KUMAR\\Downloads\\visa, sop and resume\\Projects\\Azure end2end project1 Nucleusyt"
+			"defaultValue": "C:\\Users\\LAVAN KUMAR\\Downloads\\visa, sop and resume\\Projects\\Azure end2end project1 Nucleusyt\\Data Sources"
 		},
 		"FileServer1_properties_typeProperties_userId": {
 			"type": "string",
@@ -140,8 +140,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "FileServerLocation",
-						"folderPath": "Data Sources"
+						"type": "FileServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -206,7 +205,8 @@
 								"type": "DelimitedTextSource",
 								"storeSettings": {
 									"type": "FileServerReadSettings",
-									"fileListPath": "Data Sources",
+									"recursive": true,
+									"wildcardFileName": "*.csv",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -221,7 +221,7 @@
 								"formatSettings": {
 									"type": "DelimitedTextWriteSettings",
 									"quoteAllText": true,
-									"fileExtension": ".txt"
+									"fileExtension": ".csv"
 								}
 							},
 							"enableStaging": false,
@@ -273,7 +273,7 @@
 							"headers": {},
 							"url": "https://prod-29.westus.logic.azure.com:443/workflows/e29f67bb04994795890bc537a693d357/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=sj0zDCEry3ZEO_g1xPqgt0ecu13Rgp0mR045_-3DMD8",
 							"body": {
-								"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\"\n    \"status\":  \"Success\"\n    \"runid\": @{pipeline().RunId}\n    \"time\": \"@{utcNow()}\"\n}",
+								"value": "{\n    \"pipelinename\":\"@{pipeline().Pipeline}\",\n    \"status\":  \"Success\",\n    \"runid\": \"@{pipeline().RunId}\",\n    \"time\": \"@{utcNow()}\"\n}",
 								"type": "Expression"
 							}
 						}
@@ -302,7 +302,7 @@
 							"headers": {},
 							"url": "https://prod-29.westus.logic.azure.com:443/workflows/e29f67bb04994795890bc537a693d357/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=sj0zDCEry3ZEO_g1xPqgt0ecu13Rgp0mR045_-3DMD8",
 							"body": {
-								"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\"\n    \"status\":  \"Failed\"\n    \"runid\": @{pipeline().RunId}\n    \"time\": \"@{utcNow()}\"\n}",
+								"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\",\n    \"status\":  \"Failed\",\n    \"runid\": @{pipeline().RunId},\n    \"time\": \"@{utcNow()}\"\n}",
 								"type": "Expression"
 							}
 						}

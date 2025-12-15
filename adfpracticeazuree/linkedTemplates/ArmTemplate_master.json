@@ -25,7 +25,7 @@
 		},
 		"FileServer1_properties_typeProperties_host": {
 			"type": "string",
-			"defaultValue": "C:\\Users\\LAVAN KUMAR\\Downloads\\visa, sop and resume\\Projects\\Azure end2end project1 Nucleusyt"
+			"defaultValue": "C:\\Users\\LAVAN KUMAR\\Downloads\\visa, sop and resume\\Projects\\Azure end2end project1 Nucleusyt\\Data Sources"
 		},
 		"FileServer1_properties_typeProperties_userId": {
 			"type": "string",
