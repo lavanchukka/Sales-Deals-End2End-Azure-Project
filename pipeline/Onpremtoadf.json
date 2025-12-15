@@ -20,7 +20,8 @@
 						"storeSettings": {
 							"type": "FileServerReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "Data Sources",
+							"wildcardFolderPath": "*",
+							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -84,7 +85,7 @@
 					"method": "POST",
 					"url": "https://prod-29.westus.logic.azure.com:443/workflows/e29f67bb04994795890bc537a693d357/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=sj0zDCEry3ZEO_g1xPqgt0ecu13Rgp0mR045_-3DMD8",
 					"body": {
-						"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\"\n    \"status\":  \"Success\"\n    \"runid\": @{pipeline().RunId}\n    \"time\": \"@{utcNow()}\"\n}",
+						"value": "{\n    \"pipelinename\":\"@{pipeline().Pipeline}\",\n    \"status\":  \"Success\",\n    \"runid\": \"@{pipeline().RunId}\",\n    \"time\": \"@{utcNow()}\"\n}",
 						"type": "Expression"
 					}
 				}
@@ -112,7 +113,7 @@
 					"method": "POST",
 					"url": "https://prod-29.westus.logic.azure.com:443/workflows/e29f67bb04994795890bc537a693d357/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=sj0zDCEry3ZEO_g1xPqgt0ecu13Rgp0mR045_-3DMD8",
 					"body": {
-						"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\"\n    \"status\":  \"Failed\"\n    \"runid\": @{pipeline().RunId}\n    \"time\": \"@{utcNow()}\"\n}",
+						"value": "{\n    \"pipelinename\": \"@{pipeline().Pipeline}\",\n    \"status\":  \"Failed\",\n    \"runid\": @{pipeline().RunId},\n    \"time\": \"@{utcNow()}\"\n}",
 						"type": "Expression"
 					}
 				}
