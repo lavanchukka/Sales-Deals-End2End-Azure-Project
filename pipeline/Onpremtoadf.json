@@ -19,9 +19,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "FileServerReadSettings",
-							"recursive": true,
-							"wildcardFolderPath": "*",
-							"wildcardFileName": "*",
+							"fileListPath": "Data Sources",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
