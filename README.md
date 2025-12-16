@@ -1,5 +1,5 @@
 # Sales deals Azure End2End Project
-This Project helps in understanding how various azure services &amp; tools are used to complete end-end data project.
+This Project helps in understanding how various azure services &amp; tools are used to implement an end-end data project.
 
 # Dataset
 
