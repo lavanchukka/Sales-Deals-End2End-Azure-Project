@@ -1,5 +1,6 @@
 # Sales-Azure-End2End-Project
 This Project helps in understanding how various azure services &amp; tools are used to complete end-end data projects.
+The sales deals data set is located on-premise, dataset contais 5 csv files containing
 In this project we will perform the following tasks:
 1. Move on-premises data to the cloud using Azure Data Factory with a Self-Hosted Integration Runtime(IR).
 2. Integrate data factory with Git for version control.
