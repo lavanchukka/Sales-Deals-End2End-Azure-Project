@@ -1,9 +1,11 @@
 # Sales-deals-Azure-End2End-Project
 This Project helps in understanding how various azure services &amp; tools are used to complete end-end data project.
 
+# Dataset
+
 The sales deals data set is located on-premise(from maven analytics), dataset contais 5 csv files containing B2B sales pipeline data from a fictitious company that sells computer hardware, including information on accounts, products, sales teams, and sales opportunities.
 
-In this project we will perform the following tasks:
+# In this project we will perform the following tasks:
 
 1. Move on-premises data to the cloud using Azure Data Factory with a Self-Hosted Integration Runtime(IR).
 2. Integrate data factory with Git for version control.
@@ -14,7 +16,7 @@ In this project we will perform the following tasks:
 7. Analyze data with Azure Synapse Analytics using SQL.
 8. Build interactive dashboards in Power BI for business insights.
 
-   # Project details steps
+   # Project steps
 
 1)	Create azure resource group
 2)	Create azure storage account (ADLS Gen 2)
