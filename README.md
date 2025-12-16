@@ -1,4 +1,4 @@
-# Sales-Azure-End2End-Project
+# Sales-deals-Azure-End2End-Project
 This Project helps in understanding how various azure services &amp; tools are used to complete end-end data projects.
 
 The sales deals data set is located on-premise, dataset contais 5 csv files containing
