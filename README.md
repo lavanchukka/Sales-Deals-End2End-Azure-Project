@@ -10,14 +10,6 @@
 
 This Project helps in understanding how various azure services &amp; tools are used to implement an end-end data project.
 
-# Dataset
-
-The sales deals data set is located on-premise(from maven analytics), dataset has 5 csv files named accounts, products, sales teams, and sales opportunities, about a B2B sales pipeline data from a fictitious company that sells computers hardware.
-
-# Architecture
-
-![architecture](https://github.com/lavanchukka/Sales-deals-Azure-Project/blob/main/Architecture.png)
-
 ### In this project we will perform the following tasks:
 
 1. Move on-premise data to the cloud using Azure Data Factory with a Self-Hosted Integration Runtime(IR).
@@ -28,6 +20,15 @@ The sales deals data set is located on-premise(from maven analytics), dataset ha
 6. Implement security with Azure Key Vault + Databricks Secret Scope to protect sensitive secrets.
 7. Analyze data with Azure Synapse Analytics using SQL.
 8. Connect ADLS to Power BI for visualizations.
+
+# Dataset
+
+The sales deals data set is located on-premise(from maven analytics), dataset has 5 csv files named accounts, products, sales teams, and sales opportunities, about a B2B sales pipeline data from a fictitious company that sells computers hardware.
+
+# Architecture
+
+![architecture](https://github.com/lavanchukka/Sales-deals-Azure-Project/blob/main/Architecture.png)
+
    
 # Project Implementation steps
 
